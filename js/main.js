@@ -6,11 +6,11 @@ var app = new Vue({
     },
     methods: {
         addItem: function() {
-            //alert();
             var todo = {
                 item: this.newItem
             };
             this.todos.push(todo);
+            this.newItem = '';
         }
     }
 })
