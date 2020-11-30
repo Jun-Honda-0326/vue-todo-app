@@ -6,6 +6,7 @@ var app = new Vue({
     },
     methods: {
         addItem: function() {
+            if (this.newItem == '') return; //もし未入力なら処理を終了させる
             var todo = {
                 item: this.newItem
             };
