@@ -2,3 +2,5 @@
 2020.11.30 21:04:04 INFO  time: initialize in 0.98s
 2020.11.30 21:04:06 WARN  Build server is not auto-connectable.
 2020.11.30 21:04:06 WARN  no build tool detected in workspace '/Users/jun/projects/vue/todo-app'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+11 30, 2020 9:16:18 午後 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+情報: Unsupported notification method: $/setTraceNotification
