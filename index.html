@@ -19,8 +19,12 @@
           Add
         </button>
     </form>
+    <ul>
+        <li v-for="todo in todos">
+            <span>{{todo.item}}</span>
+        </li>
+    </ul>
 
-    {{$data}}
 
 
 </div>
