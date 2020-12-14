@@ -1,23 +1,25 @@
 var app = new Vue({
-    el: '#app',
-    data: {
-        newItem: '',
-        todos: []
+  el: '#app',
+  data: {
+    task: {
+      title: "",
+      todo: ""
     },
-    methods: {
-        addItem: function() {
-            if (this.newItem == '') return; //もし未入力なら処理を終了させる
-            var todo = {
-                item: this.newItem,
-                isDone: false
-            };
-            this.todos.push(todo);
-            this.newItem = '';
-        },
-        deleteItem: function(index) {
-            this.todos.splice(index, 1)
-
-
-        }
+    tasks: []
+  },
+  methods: {
+    addTodo: function(event){
+      // alert();
+      var todo = {
+        title: this.task.title,
+        todo: this.task.todo
+      };
+      this.tasks.push(todo)
     }
+  },
+
+
+
+
+
 })
