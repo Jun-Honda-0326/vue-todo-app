@@ -17,12 +17,19 @@
       <button @click="addTodo">Todo追加</button>
     </form>
 
-    <div class="todo-box">
-      <p>タイトル: {{task.title}} </p>
-      <p>Todo: {{task.todo}} </p>
-      {{ $data }}
-    </div>
+    <ul>
+      <li v-for="(task, index) in tasks">
+        <div class="todo-box">
+          <div v-bind:class="{done: task.isDone}">
+            <input type="checkbox" v-model="task.isDone">
+            <span>タイトル:{{ task.title }}</span>
+            <span>Todo: {{ task.todo }}</span>
+            <button @click="deleteTodo(index)">削除</button>
+          </div>
+        </div>
 
+      </li>
+    </ul>
 
   </div>
 
